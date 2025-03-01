@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icomoon.eot?1a2b3c');
+  src:  url('icomoon.eot?1a2b3c#iefix') format('embedded-opentype'),
+        url('icomoon.woff') format('woff'),
+        url('icomoon.ttf') format('truetype'),
+        url('icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal; 
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-outer-space-500:before {
+  content: "\e90b";
+}
+.icon-mars-500:before {
+  content: "\e90c";
+  margin-right: 1px;
+  font-weight: 150;
+
+}
+.icon-jupiter-500:before {
+  content: "\e90d";
+}
+.icon-earth-500:before {
+  content: "\e90e";
+  margin-right: 1px;
+  font-weight: 150;
+}
+.icon-astronomy-500:before {
+  content: "\e90f";
+  margin-right: 1px;
+  font-weight: 150;
+}
+.icon-moon-sun-star-32:before {
+  content: "\e909";
+}
+.icon-milky-way:before {
+  content: "\e90a";
+}
+.icon-moon-sun-star:before {
+  content: "\e905";
+}
+.icon-light-spark:before {
+  content: "\e906";
+  margin-right: 1px;
+  font-weight: 400;
+}
+.icon-moon-sun-and-stars:before {
+  content: "\e907";
+}
+.icon-sparkle:before {
+  content: "\e908";
+}
+.icon-star-corner:before {
+  content: "\e904";
+}
+.icon-alien-svgrepo-2--com:before {
+  content: "\e900";
+}
+.icon-star:before {
+  content: "\e901";
+}
+.icon-rwd-log:before {
+  content: "\e902";
+}
+.icon-home:before {
+  content: "\e903";
+}
+.icon-pacman:before {
+  content: "\e916";
+}
+.icon-qrcode:before {
+  content: "\e938";
+}
+.icon-ticket:before {
+  content: "\e939";
+  margin-right: 1px;
+
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-location2:before {
+  content: "\e948";
+}
+.icon-clock:before {
+  content: "\e94e";
+  margin-right: 1px;
+}
+.icon-calendar:before {
+  content: "\e953";
+  margin-right: 1px;
+}
+.icon-bubbles3:before {
+  content: "\e96f";
+}
+.icon-user-tie:before {
+  content: "\e976";
+}
+.icon-gift:before {
+  content: "\e99f";
+}
+.icon-tongue:before {
+  content: "\e9e3";
+}
+.icon-wink:before {
+  content: "\e9e7";
+  margin-right: 1px;
+}
+.icon-cool:before {
+  content: "\e9eb";
+}
+.icon-hipster:before {
+  content: "\e9f9";
+}
+.icon-sleepy:before {
+  content: "\e9fd";
+}
+.icon-google:before {
+  content: "\ea88";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-tux:before {
+  content: "\eabd";
+}
+.icon-pinterest:before {
+  content: "\ead1";
+}

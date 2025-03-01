@@ -1,0 +1,63 @@
+table {
+	/* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
+	border-collapse: collapse;
+	width: 100%
+}
+
+td,
+th {
+	border: 1px solid var(--nc-bg-3);
+	text-align: left;
+	padding: .5rem;
+}
+tfoot{
+	min-width: 100;
+	text-align: center;
+}
+
+th {
+	background: var(--trans50); 
+}
+
+tr:nth-child(even) {
+	/* Set every other cell slightly darker. Improves readability. */
+	background: var(--trans50); 
+}
+
+table caption {
+	font-weight: bold;
+	margin-bottom: .5rem;
+}
+
+textarea {
+	/* Don't let the <textarea> extend off the screen naturally or when dragged by the user */
+	max-width: 100%;
+}
+@media screen and (max-width: 37.5rem) { /* 600px */ 
+	table thead {
+		border: none;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1xp;
+	
+	}
+	/* 
+	table tr {
+	border-bottom : 3px solid #ddd;
+	display: block;	
+	} */
+	table td {
+		border-bottom: 1px solid #ddd; /* ath */
+		display: block;
+		text-align: right;
+	}
+	table td::before {
+		content: attr(data-label);
+		float: left;
+		font-weight: 700;
+	}
+}

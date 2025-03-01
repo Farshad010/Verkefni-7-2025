@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="Nemandi">
+    <title>Verkefni 7. Lokaverkenfi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="01-new.css">
+    <link rel="stylesheet" href="02-grid.css">
+    <link rel="stylesheet" href="03-table.css">
+    <link rel="stylesheet" href="04-form.css">
+    <link rel="stylesheet" href="05-menus.css">   
+    <link rel="stylesheet" href="06-popup.css"> 
+    <link rel="stylesheet" href="07-iconmoon.css">
+    <link rel="stylesheet" href="08-chatbox.css">
+    <link rel="stylesheet" href="09-custom.css">
+    <link rel="stylesheet" href="10-animation.css">
+    <link rel="icon" type="image/svg" href="planets-32.svg">
+</head>
+<body>
+  <nav class="topnav">
+    <input type="checkbox" id="toggle">
+    <label for="toggle">&#9776;</label>
+    <section class="topmenu">
+      <a class="theline" href="index.html"><span class="icon-star-corner"></span>Phenomenon</a>
+      <a class="theline" href="index.html"><span class="icon-astronomy-500"></span>Visibility</a>
+      <a class="theline" href="index.html"><span class="icon-calendar"></span>Date</a>
+      <a class="theline" href="index.html"><span class="icon-earth-500"></span>Explore</a>
+      <a class="theline" href="form.html"><span class="icon-light-spark"></span>Your Experience</a>
+      <a class="theline" href="#Login"><span class="icon-wink"></span>Login/Sign up</a>
+      <div class="socialbutts">
+        <a href="#"><span class="icon-facebook"></span></a>
+        <a href="#"><span class="icon-google"></span></a>
+        <a href="#"><span class="icon-pinterest"></span></a>
+        <a href="#"><span class="icon-tux"></span></a>
+      </div>
+    </section>
+  </nav>
+  <div id="Login" class="overlay">
+    <div class="popup">
+      <form method="get" action="takk.html" class="login">
+        <fieldset>
+          <a class="close" href="#">&times;</a>
+          <legend>Login/Sign up</legend>
+          <p>Name: <input placeholder="Name" type="text" required></p>
+          <p>Password: <input placeholder="Password" type="text" required></p>
+          <p><input type="submit" value="Innskráning"></p>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <!--banner-->
+  <main id="formhtml" class="container">
+    <section class="container">
+    <section class="col-2">
+      <article> 
+        <h5>Share your experience with the astronomical events you've witnessed. Whether it's a stunning lunar eclipse, a rare planetary alignment, or a spectacular meteor shower, we'd love to hear about your observations. Tell us about the best viewing locations, what you saw, and how the event made you feel. Your insights could inspire others to explore the wonders of the night sky</h5>
+        <h2>The Colour Orange</h2>
+        <p>The colour orange speaks
+        <br>In the dark sky their lights I saw
+        <br>For the good of mankind
+        <br>Not for All mankind
+        <br>But for the man who is kind
+        <img class="theorange" src="red-galaxy.jpg" alt="">
+      </article>
+      <section>
+        <form method="get" action="takk.html" class="login">
+          <fieldset class="thebottom">
+            <legend>Fill this form</legend>
+            <section class="col-2">
+              <p>
+                <label>First name:</label><br>
+                <input type="text" name="first_name" required placeholder="fornafn">
+              </p>
+              <p>
+                <label>Last name:</label><br>
+                <input type="text" name="last_name" required placeholder="eftirnafn">
+              </p>
+            </section>
+            <p>
+              <section>
+                <label>Gender</label><br>
+                <label>
+                  <input type="radio" name="gender" value="Male">
+                  He<span class="separator">|</span>
+                </label>
+                  <label>
+                    <input type="radio" name="gender" value="Female">
+                    She<span class="separator">|</span>
+                  </label>
+                <label>
+                  <input type="radio" name="gender" value="other-none-na">
+                  They<span class="separator">|</span>
+                </label>
+              </section>
+            </p>
+            <section class="col-2">
+              <p>
+                <label>Phoen number:</label><br>
+                <input type="tel" name="phone" placeholder="Phone number">
+              </p>
+              <p>
+                <label>Gmail:</label><br>
+                <input type="email" name="email" required="" placeholder="Email">
+              </p>
+            </section>
+            <section class="col-2">
+              <p>
+                <label>Password:</label><br>
+                <input type="password" name="password" placeholder="password">
+              </p>
+              <p>
+                <label>Country:</label><br>
+                <select>
+                    <option>Switzerland</option>
+                    <option>Austria</option>
+                    <option>USA</option>
+                    <option>Germany</option>
+                    <option>France</option>
+                </select>
+              </p>
+            </section>
+            <section class="col-2">
+              <p>
+                <label>Date:</label><br>
+                <input type="date" name="Date" required="" placeholder="Date" class="fa fa-calendar"> 
+              </p>
+              <p>
+                <label>Time:</label><br>
+                <input type="time" name="Time" required="" placeholder="Date" >
+              </p>
+            </section>
+            <p>
+              <label>Youe Experience:</label>
+              <textarea rows="5"></textarea>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" value="termsX">
+                Send us information about __
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" value="termsY">
+                Send us information about __
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" value="terms">
+                I agree to the <a>terms and conditions</a>
+              </label>
+            </p>
+            <p>
+              <button class="space">Send</button>
+              <button class="space" type="reset">Reset form</button>
+              <button class="space" disabled="disabled">Disabled</button>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+    </section>
+  </main>
+  <footer class="container col-3">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>    
+    <nav>
+      <ul>
+        <li><a href="#.pdf">PDF Document</a></li>
+        <li><a href="#.doc">Word Document</a></li>
+        <li><a href="#.jpg">Image File</a></li>
+        <li><a href="#.mp3">Audio File</a></li>
+        <li><a href="#.mp4">Video File</a></li>
+      </ul>
+    </nav>
+       
+    <dl>              <!--Description list -->
+      <dt>Name</dt>
+        <dd><span class="icon-sparkle iconcolor"></span>Sayed Farshad Sadat</dd>
+      <dt>Gmail</dt>
+        <dd><span class="icon-sparkle iconcolor"></span>-----</dd>
+      <dt>Vefhönnun</dt>
+        <dd><span class="icon-sparkle iconcolor"></span>VEFÞ2VHB5AU, tölvubraut Tækniskólans</dd>
+    </dl>
+  </footer> 
+  <p class="center">2 spönn, vor 2025.</p>
+
+</body>
+</html>
+
+
+

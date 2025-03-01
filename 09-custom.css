@@ -1,0 +1,159 @@
+.bannerBg{
+    background-color: var(--background);
+}
+header h1{
+    font-weight: 300;
+    text-align: center;
+    color: rgb(0,191,255);
+}
+header section img{
+    margin: auto;
+} 
+
+header {
+	background: var(--nc-bg-2);
+	border-bottom: 1px solid var(--nc-bg-3);
+	padding: 2rem 1.5rem;
+	
+	/* This sets the right and left margins to cancel out the body's margins. It's width is still the same, but the background stretches across the page's width. */
+
+	margin: -2rem calc(50% - 50vw) 2rem;
+
+	/* Shorthand for:
+
+	margin-top: -2rem;
+	margin-bottom: 2rem;
+
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw); */
+
+	padding-left: calc(50vw - 50%);
+	padding-right: calc(50vw - 50%);
+}
+
+header h1,
+header h2,
+header h3 {
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+header > *:first-child {
+	margin: 2.5rem 0 0 0;
+	padding-top: 0;
+}
+
+/*header > *:last-child {
+	margin-bottom: -2.3rem;
+}*/
+
+.logo{
+    display: block;
+    font-size: 15rem;
+    color: #b569e8;
+}
+.iconcolor{
+    color: 	rgb(198, 219, 238);
+}
+.curve img{
+    border-radius: 10px;
+}
+.theorange{
+    margin-top: 1rem;
+    border-radius: 15px;
+}
+.space{
+    margin-top: .5rem;
+}
+.value {
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
+.value h1 {
+    width: 100px;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 1rem auto;
+    padding: 2rem 0; 
+}
+.right{
+    display: flex;
+    justify-content: right;
+}
+.thegrid {
+    display: grid;
+    grid-template-columns: 1fr; /* Default 1 column for small screens */
+}
+@media screen and (min-width: 37.5rem) {
+    .image-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 60rem) {
+    .thegrid {
+        grid-template-columns: 1fr 2fr; /* 1fr 2fr for tablets and larger screens */
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    header > *:first-child {
+        margin: 6rem 0 0 0;
+    }
+    header > *:last-child {
+        margin-bottom: -3rem;
+    }
+    .thegrid {
+        grid-template-columns: 1fr 2fr; /* Keep 1fr 2fr for large screens */
+    }
+    .image-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+/** the 4 image grid **/
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 1rem; 
+    border-radius: 15px;
+}
+.image-grid figure img {
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 37.5rem) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    .image-grid {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+
+.image-grid figure {
+    margin: 0; 
+}
+
+.image-grid img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+
+

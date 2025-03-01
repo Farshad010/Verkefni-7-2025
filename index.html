@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="Nemandi">
+    <title>Verkefni 7. Lokaverkenfi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="01-new.css">
+    <link rel="stylesheet" href="02-grid.css">
+    <link rel="stylesheet" href="03-table.css">
+    <link rel="stylesheet" href="04-form.css">
+    <link rel="stylesheet" href="05-menus.css">   
+    <link rel="stylesheet" href="06-popup.css"> 
+    <link rel="stylesheet" href="07-iconmoon.css">
+    <link rel="stylesheet" href="08-chatbox.css">
+    <link rel="stylesheet" href="09-custom.css">
+    <link rel="stylesheet" href="10-animation.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg" href="planets-32.svg">
+</head>
+<body>
+  <nav class="topnav">
+    <input type="checkbox" id="toggle">
+    <label for="toggle">&#9776;</label>
+    <section class="topmenu">
+      <a class="theline" href="#date&time"><span class="icon-star-corner"></span>Phenomenon</a>
+      <a class="theline" href="#date&time"><span class="icon-astronomy-500"></span>Visibility</a>
+      <a class="theline" href="#date&time"><span class="icon-calendar"></span>Date</a>
+      <a class="theline" href="#date&time"><span class="icon-earth-500"></span>Explore</a>
+      <a class="theline" href="form.html"><span class="icon-light-spark"></span>Your Experience</a>
+      <a class="theline" href="#Login"><span class="icon-wink"></span>Login/Sign up</a>
+      <div class="socialbutts">
+        <a href="#"><span class="icon-facebook"></span></a>
+        <a href="#"><span class="icon-google"></span></a>
+        <a href="#"><span class="icon-pinterest"></span></a>
+        <a href="#"><span class="icon-tux"></span></a>
+      </div>
+    </section>
+  </nav>
+  <div id="Login" class="overlay">
+    <div class="popup">
+      <form method="get" action="takk.html" class="login">
+        <fieldset>
+          <a class="close" href="#">&times;</a>
+          <legend>Login/Sign up</legend>
+          <p>Name: <input placeholder="Name" type="text" required></p>
+          <p>Password: <input placeholder="Password" type="text" required></p>
+          <p><input type="submit" value="Innskráning"></p>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <header class="container col-2 thegrid">
+      <section class="center">
+        <span class="icon-milky-way logo animate__bounceInDown"></span>
+        <h1>Astronomical Events 2025 equinoxes <span class="icon-sparkle iconcolor"></span>, solstices <span class="icon-astronomy-500 iconcolor"></span>, meteor showers, eclipses, supermoons,<br>and more <span class="icon-jupiter-500 iconcolor"></span>.</h1>
+      </section>
+      <section class="curve" id="slideset2">
+        <figure>
+          <img src="galaxy_img4.jpg" alt="">
+        </figure>
+        <figure>
+          <img src="galaxy_img2.jpg" alt="">
+        </figure>
+        <figure>
+          <img src="galaxy_img3.jpg" alt="">
+        </figure>
+        <figure>
+          <img src="galaxy_img1.jpg" alt="">
+        </figure>
+      </section>
+  </header>
+  <!--banner-->
+  <div class="bannerBg">
+    <section class="container">
+      <table id="date&time" class="green">
+        <caption>Astronomical Events</caption>
+        <thead>
+          <tr>
+            <th>Phenomenon</th>
+            <th>Visibility</th>
+            <th>Date</th>
+            <th>Explore</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Phenomenon"> Mercury at Greatest Elongation East</td>
+            <td data-label="Visibility">Visible worldwide</td>
+            <td data-label="Date">08. 03. 2025</td>
+            <td data-label="Explore"><button>Details</button></td>
+          </tr>
+          <tr>
+            <td data-label="Phenomenon">Total Lunar Eclipse</td>
+            <td data-label="Visibility">Visible worldwide</td>
+            <td data-label="Date">13/14. 03. 2025</td>
+            <td data-label="Explore"><button>Details</button></td>
+          </tr>
+          <tr>
+            <td data-label="Phenomenon">Worm Moon</td>
+            <td data-label="Visibility">Visible worldwide</td>
+            <td data-label="Date">14. 03. 2025</td>
+            <td data-label="Explore"><button>Details</button></td>
+          </tr>
+          <tr>
+            <td data-label="Phenomenon">March Equinox</td>
+            <td data-label="Visibility">Visible worldwide</td>
+            <td data-label="Date">20. 03. 2025</td>
+            <td data-label="Explore"><button>Details</button></td>
+          </tr>
+          <tr>
+            <td data-label="Phenomenon"> Partial Solar Eclipse</td>
+            <td data-label="Visibility">Visible worldwide</td>
+            <td data-label="Date">29. 03. 2025</td>
+            <td data-label="Explore"><button>Details</td>            
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+  <div> 
+    <!-- Hidden checkbox to toggle the chatbox -->
+    <input type="checkbox" id="toggle-chat" hidden>
+    <!-- Chat Icon -->
+    <label for="toggle-chat" class="chat-icon"><span class="icon-bubbles3"></span></label>
+    <!-- Chatbox -->
+    <div id="chatbox">
+      <form method="get" action="takk.html" class="bgcolor">
+        <fieldset>
+          <legend>Spjallbox</legend>
+          <p>Nafn:<input placeholder="Name" type="text" required></p>
+          <p>Tölvupóstur:<input placeholder="Email" type="text" required></p>
+          <p>
+            <label for="message">Skilaboð: </label>
+            <textarea  placeholder="Massage"></textarea>
+          </p>          
+          <p class="send"><input type="submit" value="Senda" ></p>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <main class="container">
+    <section class="container">
+    <section class="col-2">
+      <article> 
+        <h5>
+          The Universe is everything we can touch, feel, sense, measure or detect. It includes living things, planets, stars, galaxies, dust clouds, light, and even time. Before the birth of the Universe, time, space and matter did not exist.
+        </h5>
+        <div>
+          <h3>Hitchhike through the galaxy with me</h3>
+          <p>
+            It seems as though we all live in separate worlds..
+            <br>In that case I'm hitchhiking through the galaxy, won't you come with me?
+            <br>Hitchhike through this galaxy with me!
+            <br>We'll see new and old worlds, hear some odd dialects, remember to bring your guide and babel fish and if we are lost we musn't panic!
+            <br>We'd all love to be hitchhiking through the galaxy, so come on!
+            <br>Hitchhike through the galaxy with me!!
+          </p>
+        </div>        
+        <blockquote class="qoutecolor">The universe stretches endlessly, a canvas of starlight and silence, where galaxies whirl like cosmic dancers in the deep night. Stars flicker like forgotten dreams, and planets hum softly in their eternal waltz. In this boundless expanse, time and space entwine, weaving stories of creation and mystery, whispering the secrets of the cosmos to those who dare to listen.</blockquote></p>
+      </article>
+      <section>
+        <h6>The universe is a vast, awe-inspiring expanse, where countless stars shimmer in the endless night. Galaxies drift through the infinite, their beauty shaped by the cosmic forces of time and space. Each celestial body tells a story of creation and rebirth, reminding us of our small yet profound connection to the cosmos.</h6>
+        <h2>The Rainbow</h2>
+        <p>
+          by Christina Rossetti
+          <br>Boats sail on the rivers,
+          <br>And ships sail on the seas;
+          <br>But clouds that sail across the sky
+          <br>Are prettier far than these.
+          <br>There are bridges on the rivers,
+          <br>As pretty as you please;
+          <br>But the bow that bridges heaven,
+          <br>And overtops the trees,
+          <br>And builds a road from earth to sky,
+          <br>Is prettier far than these.
+        </p>
+      </section>
+    </section>
+    <section class="image-grid">
+      <figure>
+        <img src="red-galaxy.jpg" alt="">
+      </figure>
+      <figure>
+        <img src="galaxy_img1.jpg" alt="">
+      </figure>
+      <figure>
+        <img src="galaxy_img2.jpg" alt="">
+      </figure>
+      <figure>
+        <img src="galaxy_img4.jpg" alt="">
+      </figure>
+    </section>
+  </main>
+  <footer class="container col-3">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>    
+    <nav>
+      <ul>
+        <li><a href="#.pdf">PDF Document</a></li>
+        <li><a href="#.doc">Word Document</a></li>
+        <li><a href="#.jpg">Image File</a></li>
+        <li><a href="#.mp3">Audio File</a></li>
+        <li><a href="#.mp4">Video File</a></li>
+      </ul>
+    </nav>
+       
+    <dl>              <!--Description list -->
+      <dt>NAfn</dt>
+        <dd><span class="icon-sparkle iconcolor"></span>Sayed Farshad Sadat</dd>
+      <dt>Tölvupóstur</dt>
+        <dd><span class="icon-sparkle iconcolor"></span>-----</dd>
+      <dt>Vefhönnun</dt>
+        <dd><span class="icon-sparkle iconcolor"></span>VEFÞ2VHB5AU, tölvubraut Tækniskólans</dd>
+    </dl>
+  </footer> 
+  <p class="center">2 spönn, vor 2025.</p>
+
+</body>
+</html>
