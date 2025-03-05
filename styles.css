@@ -189,7 +189,7 @@ legend{padding:auto .5rem;border-radius:50%}
 .topnav{margin:0}
 .topmenu{display:flex;flex-flow:column;justify-content:center;margin:0;position:fixed;width:90%;top:3rem;right:-80rem;background-color:var(--yellow);transition:all 2s ease;z-index:1}
 .topmenu a{display:block;text-align:center;padding:.5rem 1rem;text-decoration:none;color:var(--nx-tx-2)}
-.topnav label{position:fixed;top:.5rem;right:1rem;padding:0 .3rem;font-size:1.5rem;border:1px solid var(--nc-tx-1);border-radius:.2rem;border:1.5px solid var(--nc-tx-1);box-shadow:4px 4px 10px #b569e8}
+.topnav label{z-index:9;position:fixed;top:.5rem;right:1rem;padding:0 .3rem;font-size:1.5rem;border:1px solid var(--nc-tx-1);border-radius:.2rem;border:1.5px solid var(--nc-tx-1);box-shadow:4px 4px 10px #b569e8}
 .topnav label:active,.topnav label:hover{background-color:var(--red-bg)}
 .socialbutts{display:flex;flex-flow:row;justify-content:space-around}
 .socialbutts a{padding:.5rem 1rem;border:0}
